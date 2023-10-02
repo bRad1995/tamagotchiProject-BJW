@@ -1,0 +1,99 @@
+body {
+    background-color: pink;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+#gifegg {
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 680px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 80px;
+}
+
+.age{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#start {
+    font-family: 'Pixelify Sans', cursive;
+    margin-right: 30px;
+    background-color: lightblue;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    font-size: 30px;
+}
+
+#feed {
+    font-family: 'Pixelify Sans', cursive;
+    margin-right: 30px;
+    background-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    font-size: 30px;
+}
+
+#play {
+    font-family: 'Pixelify Sans', cursive;
+    margin-right: 30px;
+    background-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    font-size: 30px;
+}
+
+#lights {
+    font-family: 'Pixelify Sans', cursive;
+    margin-right: 30px;
+    background-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    font-size: 30px;
+}
+
+.healthbars {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 300px;
+    font-size: 50px;
+}
+
+#lables {
+    margin-left: 400px;
+    font-size: 30px;
+}
+
+#hunger {
+    position: absolute;
+    margin-top: -235px;
+}
+
+#boredom {
+    position: absolute;
+    margin-top: -155px;
+}
+
+#sleepiness {
+    position: absolute;
+    margin-top: -80px;
+}
