@@ -1,9 +1,28 @@
+@media (max-width: 800px){
+    body {
+        width: 100%;
+    }
+}
+
+
 body {
     background-color: pink;
     font-family: 'Pixelify Sans', cursive;
 }
 
-#gifegg {
+#tamaImg {
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 680px;
+}
+
+#tamaBounce {
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 680px;
+}
+
+#tamaBlob {
     height: 150px;
     margin-top: 50px;
     margin-left: 680px;
