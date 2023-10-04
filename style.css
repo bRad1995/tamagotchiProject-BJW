@@ -12,20 +12,20 @@ body {
 
 #tamaImg {
     height: 150px;
-    margin-top: 50px;
-    margin-left: 680px;
+    margin-top: 20px;
+    margin-left: 710px;
 }
 
 #tamaBounce {
     height: 150px;
-    margin-top: 50px;
-    margin-left: 680px;
+    margin-top: 20px;
+    margin-left: 710px;
 }
 
 #tamaBlob {
     height: 150px;
-    margin-top: 50px;
-    margin-left: 680px;
+    margin-top: 20px;
+    margin-left: 710px;
 }
 
 h1 {
@@ -37,7 +37,13 @@ h1 {
 .age{
     text-align: center;
     font-size: 40px;
-    margin-top: 70px;
+    margin-top: 20px;
+}
+
+.userName{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
 }
 
 .buttons {
