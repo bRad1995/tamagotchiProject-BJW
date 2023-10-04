@@ -50,6 +50,7 @@ const gameObject = {
         const nameID = document.querySelector('#tamaName')
         nameID.innerText = `Name: ${tama.name}`
         alert("The game has started! Keep " + tama.name + " alive for as long as possbile to watch them evolve!")
+        alert("Below are three health bars. To keep " + tama.name + " alive, don't let any of them fill all the way up! Click the buttons to decrease the bars when they start to get to high. Good luck!")
     },
 
     tamaAge() {
