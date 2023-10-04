@@ -20,17 +20,16 @@ class Tamagotchi extends Newpet {
         this.age = 0;
     }
     feedTama() {
-        this.hunger -= 1;
+        this.hunger -= 2;
         this.sleepiness += 1;
     }
     boredTama() {
         this.boredom -= 2;
-        this.sleepiness += 2;
-        this.hunger++;
+        this.sleepiness += 1;
+        this.hunger += 1;
     }
     sleepTama() {
-        this.sleepiness--;
-        this.boredom++;
+        this.sleepiness -= 2;
     }
 
 }
@@ -50,6 +49,7 @@ const gameObject = {
         tama.name = prompt("Give your Tamagotchi a name!")
         const nameID = document.querySelector('#tamaName')
         nameID.innerText = `Name: ${tama.name}`
+        alert("The game has started! Keep " + tama.name + " alive for as long as possbile to watch them evolve!")
     },
 
     tamaAge() {
@@ -61,14 +61,14 @@ const gameObject = {
             if (tama.age == 1) {
                 alert(tama.name + " is fixing to hatch!")
                 document.querySelector('#tamaImg').src = "https://img.itch.zone/aW1hZ2UvODE2MTk0LzQ1OTgzNDMuZ2lm/original/KV3fcg.gif"
-                alert(tama.name + " is now a child!")
+                alert(tama.name + " is now born!")
             }
             if (tama.age == 2) {
                 alert(tama.name + " is fixing to evolve!")
                 document.querySelector('#tamaImg').src = "https://www.icegif.com/wp-content/uploads/2022/02/icegif-942.gif"
             }
 
-        }, 60000)
+        }, 30000)
     },
     // tamaAge()    
 
@@ -85,7 +85,11 @@ const gameObject = {
                 clearInterval(intervalID)
                 return
             }
-        }, 3000)
+        }, 10000)
+        feedButton.addEventListener("click", () =>{
+            tama.feedTama()
+            document.body.src ="https://spencer2124.files.wordpress.com/2014/06/background.png"
+        })
     },
     // tamaHunger()
 
@@ -101,6 +105,9 @@ const gameObject = {
                 return
             }
         }, 8000)
+        playButton.addEventListener("click", () =>{
+            tama.boredTama()
+        })
     },
     // tamaBoredom()
 
@@ -115,7 +122,10 @@ const gameObject = {
                 clearInterval(intervalID)
                 return
             }
-        }, 6000)
+        }, 12000)
+        lightButton.addEventListener("click", () => {
+            tama.sleepTama()
+        })
     },
     // tamaSleepiness()
 
