@@ -87,9 +87,6 @@ const gameObject = {
                 return
             }
         }, 1000)
-        feedButton.addEventListener("click", () =>{
-            tama.feedTama()
-        })
     },
     // tamaHunger()
 
@@ -105,9 +102,7 @@ const gameObject = {
                 return
             }
         }, 2000)
-        playButton.addEventListener("click", () =>{
-            tama.boredTama()
-        })
+    
     },
     // tamaBoredom()
 
@@ -123,10 +118,6 @@ const gameObject = {
                 return
             }
         }, 6000)
-        lightButton.addEventListener("click", () => {
-            tama.sleepTama()
-            document.body.src ="https://spencer2124.files.wordpress.com/2014/06/background.png"
-        })
     },
     // tamaSleepiness()
 
@@ -138,7 +129,17 @@ const gameObject = {
         gameObject.tamaSleepiness()
     }
 }
+feedButton.addEventListener("click", () =>{
+    tama.feedTama()
+})
+ playButton.addEventListener("click", () =>{
+        tama.boredTama()
+    }) 
 
+lightButton.addEventListener("click", () => {
+        tama.sleepTama()
+        document.body.classList.toggle("background-image")
+    })
 startButton.addEventListener('click', (event) => {
     event.target.disabled = true
     gameObject.playGame()

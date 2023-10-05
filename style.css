@@ -9,20 +9,9 @@ body {
     margin-right: auto;
     width: 8%
 }
-
-/* #tamaBounce {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8%
-}
-
-#tamaBlob {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8%
-} */
+ .background-image {
+    background-image: url('https://spencer2124.files.wordpress.com/2014/06/background.png');
+ }
 
 h1 {
     text-align: center;
