@@ -21,7 +21,6 @@ class Tamagotchi extends Newpet {
     }
     feedTama() {
         this.hunger -= 2;
-        this.sleepiness += 1;
     }
     boredTama() {
         this.boredom -= 2;
@@ -101,7 +100,7 @@ const gameObject = {
                 clearInterval(intervalID)
                 return
             }
-        }, 2000)
+        }, 4000)
     
     },
     // tamaBoredom()
