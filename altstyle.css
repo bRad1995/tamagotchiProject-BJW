@@ -1,28 +1,25 @@
-body {
+/* body {
     background-color: pink;
     font-family: 'Pixelify Sans', cursive;
 }
 
 #tamaImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8%
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 870px;
 }
 
-/* #tamaBounce {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8%
+#tamaBounce {
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 710px;
 }
 
 #tamaBlob {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8%
-} */
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 710px;
+}
 
 h1 {
     text-align: center;
@@ -45,7 +42,6 @@ h1 {
 .buttons {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 30px;
 }
 
 #start {
@@ -92,22 +88,30 @@ h1 {
     font-size: 30px;
 }
 
-h2 {
+.healthbars {
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 300px;
+    font-size: 50px;
+}
+
+#lables {
+    margin-left: 600px;
     font-size: 30px;
-    margin-bottom: -10px;
-
 }
 
-.hungerbar {
-    text-align: center;
-    font-size: 70px;   
+#hunger {
+    position: absolute;
+    margin-top: -235px;
 }
-.boredbar {
-    text-align: center;
-    font-size: 70px;
+
+#boredom {
+    position: absolute;
+    margin-top: -155px;
 }
-.sleepbar {
-    text-align: center;
-    font-size: 70px
-}
+
+#sleepiness {
+    position: absolute;
+    margin-top: -80px;
+} */

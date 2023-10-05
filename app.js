@@ -81,15 +81,14 @@ const gameObject = {
             hungryTamaID.value = tama.hunger
             // console.log(tama.hunger)
 
-            if (tama.hunger > 10) {
+            if (tama.hunger > 20) {
                 alert("Oh no! " + tama.name + " died from starvation :( !")
                 clearInterval(intervalID)
                 return
             }
-        }, 10000)
+        }, 1000)
         feedButton.addEventListener("click", () =>{
             tama.feedTama()
-            document.body.src ="https://spencer2124.files.wordpress.com/2014/06/background.png"
         })
     },
     // tamaHunger()
@@ -100,12 +99,12 @@ const gameObject = {
             tama.boredom = parseInt(tama.boredom) + 1
             boredTamaID.value = tama.boredom
 
-            if (tama.boredom > 10) {
+            if (tama.boredom > 20) {
                 alert("Oh no! " + tama.name + " died from lack of attention :( !")
                 clearInterval(intervalID)
                 return
             }
-        }, 8000)
+        }, 2000)
         playButton.addEventListener("click", () =>{
             tama.boredTama()
         })
@@ -118,14 +117,15 @@ const gameObject = {
             tama.sleepiness = parseInt(tama.sleepiness) + 2
             sleepyTamaID.value = tama.sleepiness
 
-            if (tama.sleepiness > 10) {
+            if (tama.sleepiness > 20) {
                 alert("Oh no! " + tama.name + " died from lack of sleep :( !")
                 clearInterval(intervalID)
                 return
             }
-        }, 12000)
+        }, 6000)
         lightButton.addEventListener("click", () => {
             tama.sleepTama()
+            document.body.src ="https://spencer2124.files.wordpress.com/2014/06/background.png"
         })
     },
     // tamaSleepiness()
